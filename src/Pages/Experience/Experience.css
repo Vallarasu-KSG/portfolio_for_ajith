@@ -1,0 +1,114 @@
+.experience-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #dfe6e9, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #6a1b9a;
+  margin-bottom: 40px;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.experience-card {
+  background: #ffffff;
+  border-left: 6px solid #00bcd4;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.company-name,
+.job-title,
+.job-duration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.company-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00796b;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  color: #0288d1;
+}
+
+.job-duration {
+  font-size: 0.9rem;
+  color: #616161;
+}
+
+.job-responsibilities {
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.job-responsibilities li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1rem;
+}
+
+.job-responsibilities svg {
+  color: #009688;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .experience-card {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.3rem;
+  }
+
+  .job-title {
+    font-size: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

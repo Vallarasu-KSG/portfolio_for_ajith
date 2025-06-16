@@ -1,0 +1,97 @@
+:root {
+  --bg-light: #f1f2f6;
+  --bg-dark: #2f3542;
+  --text-light: #2d3436;
+  --text-dark: #f1f2f6;
+  --card-bg-light: rgba(255, 255, 255, 0.7);
+  --card-bg-dark: rgba(47, 53, 66, 0.7);
+}
+
+.skills-section {
+  padding: 40px 20px;
+  /* background: linear-gradient(135deg, var(--bg-light), #ffffff); */
+  background: linear-gradient(135deg, #dfe6e9, #ffffff);
+  min-height: 100vh;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #6a1b9a;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: var(--card-bg-light);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card .icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+/* Hover animation on icon */
+.skill-card:hover .icon {
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* Colorful Icons (8 skills) */
+.skill-card:nth-child(1) .icon { color: #6c5ce7; }   /* B2B Sales */
+.skill-card:nth-child(2) .icon { color: #00cec9; }   /* Market Research */
+.skill-card:nth-child(3) .icon { color: #e17055; }   /* CRM */
+.skill-card:nth-child(4) .icon { color: #fd79a8; }   /* Digital Marketing */
+.skill-card:nth-child(5) .icon { color: #0984e3; }   /* LinkedIn */
+.skill-card:nth-child(6) .icon { color: #2ecc71; }   /* Lead Generation */
+.skill-card:nth-child(7) .icon { color: #f39c12; }   /* Funnel/Conversion */
+.skill-card:nth-child(8) .icon { color: #8e44ad; }   /* Field Visit */
+
+.skill-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .skill-card {
+    padding: 20px 15px;
+  }
+
+  .skill-card .icon {
+    font-size: 2.2rem;
+  }
+
+  .skill-card p {
+    font-size: 1rem;
+  }
+
+  .skills-section h2 {
+    font-size: 2.2rem;
+  }
+}

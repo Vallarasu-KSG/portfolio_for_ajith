@@ -1,0 +1,5 @@
+npm i react-router-dom
+npm install react-icons
+npm install aos
+npm install framer-motion react-icons
+npm install react-toastify

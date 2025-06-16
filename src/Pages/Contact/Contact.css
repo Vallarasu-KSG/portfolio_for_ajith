@@ -1,0 +1,235 @@
+.contact-section-new {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #dfe6e9, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.contact-section-new.show-contact {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+  color: #6a1b9a;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== LEFT BOX TEXT ===== */
+.get-in-touch-box {
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  border-left: 4px solid #8e24aa;
+  background: linear-gradient(135deg, #f3e5f5, #ede7f6);
+  border-radius: 12px;
+}
+
+.touch-title {
+  font-size: 1.4rem;
+  color: #6a1b9a;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.touch-text {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.contact-box p {
+  font-size: 1.05rem;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  color: #333;
+  flex-wrap: wrap;
+}
+
+.c-icon {
+  margin-right: 10px;
+  font-size: 1.4rem;
+  min-width: 24px;
+}
+
+/* Individual icon colors */
+.fa-map-marker-alt {
+  color: #d32f2f; /* Red for location */
+}
+
+.fa-phone {
+  color: #388e3c; /* Green for phone */
+}
+
+.fa-envelope {
+  color: #1976d2; /* Blue for email */
+}
+
+.fa-linkedin {
+  color: #0a66c2; /* LinkedIn blue */
+}
+
+.fa-instagram {
+  color: #e1306c; /* Instagram pink */
+}
+
+.fa-whatsapp {
+  color: #25d366; /* WhatsApp green */
+}
+
+
+.contact-box a {
+  color: #6a1b9a;
+  text-decoration: none;
+  margin-left: 6px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-box a:hover {
+  color: #4a148c;
+}
+
+/* ===== RIGHT FORM BOX ===== */
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+}
+
+.contact-form-box input:focus,
+.contact-form-box textarea:focus {
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #ce93d8;
+}
+
+.contact-form-box h3 {
+  color: #6a1b9a;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact-form-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #8e24aa, #ce93d8);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form-box button:hover {
+  background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .contact-section-new {
+    padding: 40px 15px;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .glass-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .get-in-touch-box {
+    padding: 12px 16px;
+  }
+
+  .touch-title {
+    font-size: 1.1rem;
+  }
+
+  .touch-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .contact-box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 10px 0;
+  }
+
+  .c-icon {
+    font-size: 1.3rem;
+    margin-right: 8px;
+  }
+
+  .contact-form-box input,
+  .contact-form-box textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .contact-form-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form-box button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+

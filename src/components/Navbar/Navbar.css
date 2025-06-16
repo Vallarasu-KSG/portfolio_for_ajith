@@ -1,0 +1,129 @@
+/* Base Colors */
+:root {
+  --primary: #ff6b6b;
+  --secondary: #f7fff7;
+  --active: #1a535c;
+  --hover: #ffe66d;
+}
+
+/* Navbar Container */
+.navbar-main-container {
+  width: 100%;
+  background: linear-gradient(135deg, #8e24aa, #ce93d8);
+  color: white;
+  padding: 16px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Inner Layout */
+.navbar-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.name-logo-box a {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--secondary);
+  text-decoration: none;
+  animation: fadeIn 1s ease-in;
+}
+
+.name-logo-box a:hover {
+  color: var(--hover);
+}
+
+/* Nav Links */
+.nav-list-box {
+  display: flex;
+  gap: 24px;
+  transition: all 0.3s;
+}
+
+.nav-list-box a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-list-box a::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: var(--hover);
+  transition: width 0.3s;
+}
+
+.nav-list-box a:hover::after {
+  width: 100%;
+}
+
+.nav-list-box a.active {
+  font-weight: bold;
+  color: var(--hover);
+}
+
+/* Hamburger */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle svg {
+  fill: var(--secondary);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .nav-list-box {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: linear-gradient(135deg, #8e24aa, #ce93d8);
+    color: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: none;
+    animation: dropIn 0.3s ease;
+  }
+
+  .nav-list-box.open {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+/* Animations */
+@keyframes dropIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

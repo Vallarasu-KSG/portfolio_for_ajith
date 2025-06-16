@@ -1,0 +1,126 @@
+/* Base container */
+.timeline-container {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #dfe6e9, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #6a1b9a;
+  margin-bottom: 50px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Timeline style */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #00acc1;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-in-out;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dot icon */
+.timeline-dot {
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  font-size: 1.2rem;
+  color: #00838f;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+/* Content Box */
+.timeline-content {
+  background: #ffffff;
+  border-left: 5px solid #00acc1;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  font-size: 1.4rem;
+  color: #006064;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  margin: 5px 0;
+  color: #424242;
+}
+
+.timeline-content .score {
+  font-weight: bold;
+  color: #00796b;
+}
+
+.timeline-content span {
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 35px;
+  }
+
+  .timeline-dot {
+    left: 0;
+  }
+
+  .timeline-content {
+    padding: 15px;
+  }
+
+  .timeline-title {
+    font-size: 2rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Fade animation */
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

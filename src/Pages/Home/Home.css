@@ -1,0 +1,155 @@
+/* Root color variables for consistency */
+:root {
+  --primary-color: #0a66c2;
+  --secondary-color: #ff7675;
+  --background-light: #f0f4f8;
+  --text-color: #2d3436;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Main Container */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #dfe6e9, #ffffff);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Left Side Content */
+.home-left-box {
+  flex: 1;
+  padding-right: 40px;
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.intro-text {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.name-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+.role-text {
+  font-size: 24px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.description-text {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Resume Button Styling */
+.resume-button {
+  text-decoration: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #8e24aa, #ce93d8);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px var(--shadow);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.resume-button:hover {
+  background: linear-gradient(135deg, #8f2faa, #d9a4e2);
+  transform: scale(1.05);
+}
+
+/* Right Side Image */
+.home-right-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInRight 1s ease forwards;
+}
+
+.profile-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 10px 25px rgba(182, 4, 236, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries: Responsive Design */
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .home-left-box {
+    padding-right: 0;
+  }
+
+  .name-text {
+    font-size: 36px;
+  }
+
+  .role-text {
+    font-size: 20px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .resume-button {
+    font-size: 15px;
+    padding: 10px 24px;
+  }
+
+  .profile-image {
+    width: 220px;
+    height: 220px;
+    margin-top: 30px;
+  }
+}
+
+/* Optional keyframe animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
