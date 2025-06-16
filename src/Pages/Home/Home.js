@@ -8,6 +8,7 @@ import Education from '../Education/Education';
 import Experience from '../Experience/Experience';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
   useEffect(() => {
@@ -38,6 +39,7 @@ const Home = () => {
     <Experience/>
     <About/>
     <Contact/>
+    <Footer/>
     </>
   );
 };

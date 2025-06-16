@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <section className="contact-section-new" ref={contactRef}>
-      <h2 className="contact-heading">📬 Contact Info</h2>
+      <h2 className="contact-heading">Contact Info</h2>
 
       <div className="contact-container">
         {/* LEFT BOX */}
