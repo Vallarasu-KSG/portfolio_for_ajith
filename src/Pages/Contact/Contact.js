@@ -47,7 +47,7 @@ const Contact = () => {
             <a href="https://www.instagram.com/sachin_ajith_10_7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@sachin_ajith_10_7</a>
           </p>
           <p><FaWhatsapp className="c-icon fa-whatsapp" /> <strong>WhatsApp:</strong>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">Chat with me</a>
+            <a href="https://wa.me/919566387910" target="_blank" rel="noopener noreferrer">Chat with me</a>
           </p>
         </div>
 

@@ -28,8 +28,8 @@ const About = () => {
           <img src={ProfilePic} alt="Ajith Kumar" />
         </div>
         <div className="about-content">
-          <p><FaUserAlt className="about-icon" /> I’m <strong>Ajith Kumar</strong>, a dedicated and goal-oriented Sales & Marketing professional.</p>
-          <p><FaLaptopCode className="about-icon" /> Passionate about helping brands grow with data-driven field strategies and digital integration.</p>
+          <p><FaUserAlt className="about-icon" /> I’m <strong>Ajith</strong>, a dedicated and goal-oriented Sales & Marketing professional.</p>
+          <p><FaLaptopCode className="about-icon" /> Passionate about helping brands grow with data-driven strategies and digital integration.</p>
           <p><FaMapMarkerAlt className="about-icon" /> Based in <strong>Tamil Nadu</strong>, always open to opportunities in sales, marketing, and growth roles.</p>
           <p><FaLightbulb className="about-icon" /> <strong>Dynamic and forward-thinking professional</strong> with a strong foundation in business development and marketing, complemented by an MBA in Marketing & Finance.</p>
           <p>Recognized for my <strong>analytical skills</strong> and <strong>innovative problem-solving</strong> approach, I thrive in challenging environments where strategic thinking and creativity are paramount.</p>
