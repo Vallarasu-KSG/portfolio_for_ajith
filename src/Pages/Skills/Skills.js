@@ -3,17 +3,33 @@ import './Skills.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import { FaHandshake, FaSearch, FaUsers, FaBullhorn, FaLinkedin, FaFilter, FaMapMarkedAlt, FaUserPlus } from 'react-icons/fa';
+import { 
+  FaChartLine, 
+  FaBullhorn, 
+  FaCogs, 
+  FaDatabase, 
+  FaChartBar, 
+  FaProjectDiagram, 
+  FaUsers, 
+  FaClipboardList, 
+  FaHandshake, 
+  FaComments, 
+  FaSearch 
+} from 'react-icons/fa';
 
 const skillsData = [
-  { icon: <FaHandshake />, title: 'B2B Sales & Business Development' },
-  { icon: <FaSearch />, title: 'Market Research & Competitor Analysis' },
-  { icon: <FaUsers />, title: 'Customer Relationship Management (CRM)' },
-  { icon: <FaBullhorn />, title: 'Digital Marketing Tools & Concepts' },
-  { icon: <FaLinkedin />, title: 'LinkedIn Sales Navigator' },
-  { icon: <FaUserPlus />, title: 'Lead Generation & Prospecting' },
-  { icon: <FaFilter />, title: 'Sales Funnel & Conversion Optimization' },
-  { icon: <FaMapMarkedAlt />, title: 'Field Visit Planning & Execution' },
+  { icon: <FaChartLine />, title: 'Sales Data Tracking & Reporting' },
+  { icon: <FaBullhorn />, title: 'Digital Marketing Tools' },
+  { icon: <FaCogs />, title: 'Process Improvement' },
+  { icon: <FaUsers />, title: 'Odoo CRM' },
+  { icon: <FaChartBar />, title: 'Data Visualization' },
+  { icon: <FaDatabase />, title: 'SQL (Basic)' },
+  { icon: <FaChartBar />, title: 'Power BI' },
+  { icon: <FaProjectDiagram />, title: 'Agile Methodology' },
+  { icon: <FaHandshake />, title: 'Stakeholder Management' },
+  { icon: <FaClipboardList />, title: 'Requirements Gathering' },
+  { icon: <FaComments />, title: 'Communication' },
+  { icon: <FaSearch />, title: 'Market & Trend Analysis' },
 ];
 
 const Skills = () => {

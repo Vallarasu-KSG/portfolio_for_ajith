@@ -1,84 +1,108 @@
 .experience-section {
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #dfe6e9, #ffffff);
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #eceff1, #ffffff);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: #6a1b9a;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-transform: uppercase;
   animation: fadeInDown 0.8s ease-in-out;
 }
 
+/* EXPERIENCE CARD STYLE */
 .experience-card {
-  background: #ffffff;
-  border-left: 6px solid #00bcd4;
-  border-radius: 12px;
-  padding: 25px 30px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  animation: slideUp 0.8s ease-in-out;
-  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  border-left: 6px solid #6a1b9a;
+  border-radius: 16px;
+  padding: 30px 35px;
+  margin: 25px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  animation: slideUp 0.9s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
 
+/* TEXT STYLING */
 .company-name,
 .job-title,
 .job-duration {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .company-name {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #00796b;
+  color: #4a148c;
 }
 
 .job-title {
   font-size: 1.2rem;
-  color: #0288d1;
+  color: #00796b;
+  font-weight: 500;
 }
 
 .job-duration {
-  font-size: 0.9rem;
-  color: #616161;
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
 }
 
+/* RESPONSIBILITIES LIST */
 .job-responsibilities {
   padding-left: 0;
-  margin-top: 15px;
+  margin-top: 18px;
+  list-style: none;
 }
 
 .job-responsibilities li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
-  margin-bottom: 10px;
-  color: #444;
+  margin-bottom: 12px;
+  color: #333;
   font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .job-responsibilities svg {
-  color: #009688;
+  color: #6a1b9a;
+  min-width: 18px;
+  margin-top: 4px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* ICON HOVER EFFECT */
+.job-responsibilities li:hover svg {
+  color: #00bcd4;
+  transform: rotate(15deg) scale(1.2);
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-  .experience-card {
-    padding: 20px;
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
   }
 
-  .section-title {
-    font-size: 2rem;
+  .experience-card {
+    padding: 25px 20px;
+    max-width: 95%;
   }
 
   .company-name {
@@ -87,6 +111,10 @@
 
   .job-title {
     font-size: 1rem;
+  }
+
+  .job-responsibilities li {
+    font-size: 0.95rem;
   }
 }
 
@@ -104,7 +132,7 @@
 
 @keyframes fadeInDown {
   from {
-    transform: translateY(-20px);
+    transform: translateY(-25px);
     opacity: 0;
   }
   to {

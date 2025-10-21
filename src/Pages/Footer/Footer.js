@@ -12,12 +12,12 @@ const Footer = () => {
         {/* Left Content */}
         <div className="footer-left">
           <h4>Ajith S</h4>
-          <p>Sales & Marketing Executive</p>
+          <p>Business Analyst</p>
         </div>
 
         {/* Center Copyright */}
         <div className="footer-center">
-          © 2025 <a href="https://portfolio-for-vallarasu.netlify.app/">Vallarasu</a> | All Rights Reserved
+          © {new Date().getFullYear()} <a href="https://kvallarasu.space" target="_blank" rel="noopener noreferrer">Vallarasu_K</a>. All rights reserved.
         </div>
 
         {/* Right Social Icons */}

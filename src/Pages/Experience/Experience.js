@@ -7,26 +7,57 @@ const Experience = () => {
     <div className="experience-section">
       <h2 className="section-title">Experience</h2>
 
-      <div className="experience-card">
-        <h3 className="company-name"><FaBuilding /> STANZA LIVING (DWELVE SPACES PVT LTD)</h3>
-        <p className="job-title"><FaUserTie /> Sales & Marketing Executive</p>
-        <p className="job-duration"><FaCalendarAlt /> Sep 2022 - Oct 2022</p>
+      {/* Experience 1 */}
+      <div className="experience-card" data-aos="fade-up">
+        <h3 className="company-name">
+          <FaBuilding /> Wondersoft Private Limited - Chennai
+        </h3>
+        <p className="job-title">
+          <FaUserTie /> Business Manager
+        </p>
+        <p className="job-duration">
+          <FaCalendarAlt /> June 2025 - Present
+        </p>
         <ul className="job-responsibilities">
-          <li><FaCheckCircle /> Manage complete B2B sales cycle from lead generation to deal closure.</li>
-          <li><FaCheckCircle /> Build and maintain strong relationships with corporate clients and partners.</li>
-          <li><FaCheckCircle /> Negotiate contracts and service agreements with business partners.</li>
-          <li><FaCheckCircle /> Generate leads through digital platforms and traditional methods.</li>
+          <li>
+            <FaCheckCircle /> Analyze customer and sales data to identify new market opportunities, increasing B2B client acquisition by 25%.
+          </li>
+          <li>
+            <FaCheckCircle /> Convert partner-generated leads into paying customers, contributing to sustained revenue growth.
+          </li>
+          <li>
+            <FaCheckCircle /> Conduct product demos and consultative discussions to tailor SaaS solutions to client business needs.
+          </li>
+          <li>
+            <FaCheckCircle /> Build and maintain strong relationships with corporate clients and partners.
+          </li>
         </ul>
       </div>
 
-      <div className="experience-card">
-        <h3 className="company-name"><FaBuilding /> Sundaram Business Services</h3>
-        <p className="job-title"><FaUserTie /> Marketing Intern</p>
-        <p className="job-duration"><FaCalendarAlt /> Sep 2022 - Oct 2022</p>
+      {/* Experience 2 */}
+      <div className="experience-card" data-aos="fade-up" data-aos-delay="200">
+        <h3 className="company-name">
+          <FaBuilding /> Stanza Living - Chennai
+        </h3>
+        <p className="job-title">
+          <FaUserTie /> Sales Associate
+        </p>
+        <p className="job-duration">
+          <FaCalendarAlt /> Apr 2023 - May 2025
+        </p>
         <ul className="job-responsibilities">
-          <li><FaCheckCircle /> Helped team with market research and data collection.</li>
-          <li><FaCheckCircle /> Worked on Excel for basic data entry and analysis.</li>
-          <li><FaCheckCircle /> Learned about business research methods and reporting.</li>
+          <li>
+            <FaCheckCircle /> Managed complete B2B & B2C sales cycle from lead generation to deal closure.
+          </li>
+          <li>
+            <FaCheckCircle /> Engaged with potential customers to explain Stanza Living’s accommodation solutions, ensuring high conversion through personalized interactions.
+          </li>
+          <li>
+            <FaCheckCircle /> Identified new business opportunities and provided insights to improve customer experience and pricing strategies.
+          </li>
+          <li>
+            <FaCheckCircle /> Maintained accurate records of client communications and sales data in CRM tools for performance tracking and reporting.
+          </li>
         </ul>
       </div>
     </div>

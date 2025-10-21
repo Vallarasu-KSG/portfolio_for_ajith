@@ -51,6 +51,7 @@
   color: var(--text-color);
   margin-bottom: 30px;
   line-height: 1.6;
+      text-align: justify;
 }
 
 /* Resume Button Styling */
@@ -116,6 +117,7 @@
   }
 
   .description-text {
+
     font-size: 16px;
   }
 

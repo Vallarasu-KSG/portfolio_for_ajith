@@ -20,11 +20,11 @@ const Home = () => {
       <div className="home-left-box">
         <h4 className="intro-text">Hi, I'm</h4>
         <h1 className="name-text">Ajith S</h1>
-        <h3 className="role-text">Sales & Marketing Executive</h3>
+        <h3 className="role-text">Business Analyst</h3>
         <p className="description-text">
-          Helping businesses grow with smart field sales and strong customer relationships.
+          Analyzes business processes and data to identify opportunities for improvement. Bridges the gap between stakeholders and technical teams to deliver efficient solutions.
         </p>
-        <a href='/AJITH_RESUME_MARKETING_SPECIALIST.pdf' download="AJITH_RESUME_MARKETING_SPECIALIST.pdf" className="resume-button">Download Resume</a>
+        <a href='/Ajith_Business_Analyst.pdf' download="AJITH_RESUME_MARKETING_SPECIALIST.pdf" className="resume-button" >Download Resume</a>
       </div>
       <div className="home-right-box">
         <img

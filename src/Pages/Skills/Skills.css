@@ -9,7 +9,6 @@
 
 .skills-section {
   padding: 40px 20px;
-  /* background: linear-gradient(135deg, var(--bg-light), #ffffff); */
   background: linear-gradient(135deg, #dfe6e9, #ffffff);
   min-height: 100vh;
   transition: background 0.3s ease;
@@ -21,6 +20,8 @@
   font-weight: bold;
   margin-bottom: 40px;
   color: #6a1b9a;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .skills-grid {
@@ -42,41 +43,45 @@
 }
 
 .skill-card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-8px) scale(1.03);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .skill-card .icon {
   font-size: 3rem;
   margin-bottom: 15px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover animation on icon */
 .skill-card:hover .icon {
   transform: rotate(10deg) scale(1.2);
 }
 
-/* Colorful Icons (8 skills) */
-.skill-card:nth-child(1) .icon { color: #6c5ce7; }   /* B2B Sales */
-.skill-card:nth-child(2) .icon { color: #00cec9; }   /* Market Research */
-.skill-card:nth-child(3) .icon { color: #e17055; }   /* CRM */
-.skill-card:nth-child(4) .icon { color: #fd79a8; }   /* Digital Marketing */
-.skill-card:nth-child(5) .icon { color: #0984e3; }   /* LinkedIn */
-.skill-card:nth-child(6) .icon { color: #2ecc71; }   /* Lead Generation */
-.skill-card:nth-child(7) .icon { color: #f39c12; }   /* Funnel/Conversion */
-.skill-card:nth-child(8) .icon { color: #8e44ad; }   /* Field Visit */
+/* Colorful Icons (12 Skills) */
+.skill-card:nth-child(1) .icon { color: #6c5ce7; }   /* Sales Data Tracking */
+.skill-card:nth-child(2) .icon { color: #00cec9; }   /* Digital Marketing Tools */
+.skill-card:nth-child(3) .icon { color: #e17055; }   /* Process Improvement */
+.skill-card:nth-child(4) .icon { color: #2ecc71; }   /* Odoo CRM */
+.skill-card:nth-child(5) .icon { color: #0984e3; }   /* Data Visualization */
+.skill-card:nth-child(6) .icon { color: #f39c12; }   /* SQL */
+.skill-card:nth-child(7) .icon { color: #9b59b6; }   /* Power BI */
+.skill-card:nth-child(8) .icon { color: #d63031; }   /* Agile Methodology */
+.skill-card:nth-child(9) .icon { color: #16a085; }   /* Stakeholder Management */
+.skill-card:nth-child(10) .icon { color: #e84393; }  /* Requirements Gathering */
+.skill-card:nth-child(11) .icon { color: #74b9ff; }  /* Communication */
+.skill-card:nth-child(12) .icon { color: #fdcb6e; }  /* Market & Trend Analysis */
 
 .skill-card p {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-light);
+  letter-spacing: 0.3px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
   .skill-card {
@@ -84,7 +89,7 @@
   }
 
   .skill-card .icon {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   .skill-card p {
